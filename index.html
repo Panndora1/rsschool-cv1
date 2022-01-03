@@ -85,26 +85,26 @@
                     <h2>Code</h2>
                     <hr>
                     <pre>
-                        <code>
-                            function toWeirdCase(string){
-                                let word = string.split(' ')
-                                let res = ''
+                        
+function toWeirdCase(string){
+  let word = string.split(' ')
+  let res = ''
                                 
-                                for (let i = 0; i < word.length; i++) {
-                                  for (let j = 0; j < word[i].length; j++) {
-                                    if (j % 2 === 0) {
-                                      res += word[i][j].toUpperCase()
-                                    } else {
-                                      res += word[i][j].toLowerCase()
-                                    }
-                                  }
+  for (let i = 0; i < word.length; i++) {
+    for (let j = 0; j < word[i].length; j++) {
+       if (j % 2 === 0) {
+        res += word[i][j].toUpperCase()
+       } else {
+        res += word[i][j].toLowerCase()
+       }
+    }
                                   
-                                  res += ' '
-                                }
+    res += ' '
+  }
                                 
-                                return res.slice(0, -1)
-                              }
-                        </code>
+ return res.slice(0, -1)
+}
+                        
                     </pre>
 
                 </div>
