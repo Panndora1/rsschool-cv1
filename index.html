@@ -19,9 +19,9 @@
             </div>
             <div class="text">
                 <h1>Valentina <span class="last_name">Durdieva</span></h1>
-                <h2 class="prof">Professional title</h2>
+                <h2 class="prof">Resume page</h2>
                 <hr>
-                <p>GHfkdgfjhdghlkdshjgdjkshj dfghdkdf dhjdkfkdf sdhjsdkfjkd fhsdkjhdfkdj;</p>
+                <p class="greetings">Hey! Glad to see you on my resume page. This is my first work that I can show the world. Here I tell you a little about myself, my skills and abilities. I hope, you like it!</p>
             </div>
         </div>     
     </header>
@@ -40,7 +40,7 @@
             <div class="contact">
                 <img src="assets/placeholder.png" alt="Adress">
                 <hr>
-                <p>Izhevsk, Russia</p>
+                <p>Izhevsk, Udmurt Republic, Russia</p>
             </div>
         </section>
         <div class="information">
@@ -49,10 +49,10 @@
                     <h2>Education</h2>
                     <hr>
                     <p class="course first">HEXLET</p>
-                    <p>Done JavaScript Course</p>
+                    <p>Took a course on JavaScript basics</p>
                     <br>
                     <p class="course">HTML ACADEMY</p>
-                    <p>Done HTML and CSS Course</p>
+                    <p>Took a course on HTML and CSS basics.</p>
                 </div>
                 <div class="skills">
                     <h2>Skills</h2>
@@ -75,21 +75,43 @@
                 <div class="about_me">
                     <h2>About me</h2>
                     <hr>
-                    <p class="first">Hjkfdehjkhfjhkdfjkhkdre hjkhjkbk dhjkhjkbhh djhjkhjkhkjf jhjhkhjkf
-                        dbhjbkjhlkjlklo;lii
-                        hjkhjkhjkhl
-                        bblji
-                    </p>
+                    <p class="first">In my work, I come across web development every day. This interested me very much. I began to independently study first HTML and CSS, then JavaScript. And although I have no experience in full-fledged development, my knowledge helps me every day.</p>
+                    <br>
+                    <p>My goal right now is to get a job as a junior front-end developer.</p>    
+                    <br>
+                    <p>I’m sure my persistence can make up for my lack of commercial development experience.</p>
                 </div>
                 <div class="code">
                     <h2>Code</h2>
                     <hr>
+                    <pre>
+                        <code>
+                            function toWeirdCase(string){
+                                let word = string.split(' ')
+                                let res = ''
+                                
+                                for (let i = 0; i < word.length; i++) {
+                                  for (let j = 0; j < word[i].length; j++) {
+                                    if (j % 2 === 0) {
+                                      res += word[i][j].toUpperCase()
+                                    } else {
+                                      res += word[i][j].toLowerCase()
+                                    }
+                                  }
+                                  
+                                  res += ' '
+                                }
+                                
+                                return res.slice(0, -1)
+                              }
+                        </code>
+                    </pre>
 
                 </div>
                 <div class="project">
                     <h2>Project</h2>
                     <hr>
-                    <p class="first">Ghdjruur djklsosp dkldj skjdchk doejsdh</p>
+                    <p class="first">My first project that I completed was a resume. It is available here <a href="https://Panndora1.github.io/rsschool-cv/">Panndora1.github.io/rsschool-cv/</a></p>
                 </div>
             </section>
         </div>
@@ -98,8 +120,8 @@
         <nav>
             <a href="">GitHab Autor</a>
             <p>2022</p>
-            <img src="" alt="logo RSS">
-        </nav>
+            <a href="https://rs.school/js/" class="logo"><img src="assets/rs_school_js.svg" alt="logo RSS"></a>
+            
     </footer>
 </body>
 </html>
