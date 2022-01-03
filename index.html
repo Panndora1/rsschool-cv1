@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Valentina Durdieva</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="image">
+                <img src="assets/me.JPG" alt="avatar" class="avatar">
+            </div>
+            <div class="text">
+                <h1>Valentina <span class="last_name">Durdieva</span></h1>
+                <h2 class="prof">Resume page</h2>
+                <hr>
+                <p class="greetings">Hey! Glad to see you on my resume page. This is my first work that I can show the world. Here I tell you a little about myself, my skills and abilities. I hope, you like it!</p>
+            </div>
+        </div>     
+    </header>
+    <main>
+        <section class="contacts">
+            <div class="contact">
+                <img src="assets/telephone.png" alt="Number">
+                <hr>
+                <p>+7 996 324 92 65</p>
+            </div>
+            <div class="contact">
+                <img src="assets/email.png" alt="Email">
+                <hr>
+                <p>valentina_pavlovna1881@mail.ru</p> 
+            </div>
+            <div class="contact">
+                <img src="assets/placeholder.png" alt="Adress">
+                <hr>
+                <p>Izhevsk, Udmurt Republic, Russia</p>
+            </div>
+        </section>
+        <div class="information">
+            <section class="left_column">
+                <div class="education">
+                    <h2>Education</h2>
+                    <hr>
+                    <p class="course first">HEXLET</p>
+                    <p>Took a course on JavaScript basics</p>
+                    <br>
+                    <p class="course">HTML ACADEMY</p>
+                    <p>Took a course on HTML and CSS basics.</p>
+                </div>
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <hr>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="landuages">
+                    <h2>Languages</h2>
+                    <hr>
+                    <p class="first"><b>English</b> - A2</p>
+                    <p><b>Russian</b> - Native</p>
+                </div>
+            </section>
+            <section class="right_column">
+                <div class="about_me">
+                    <h2>About me</h2>
+                    <hr>
+                    <p class="first">In my work, I come across web development every day. This interested me very much. I began to independently study first HTML and CSS, then JavaScript. And although I have no experience in full-fledged development, my knowledge helps me every day.</p>
+                    <br>
+                    <p>My goal right now is to get a job as a junior front-end developer.</p>    
+                    <br>
+                    <p>I’m sure my persistence can make up for my lack of commercial development experience.</p>
+                </div>
+                <div class="code">
+                    <h2>Code</h2>
+                    <hr>
+                    <pre>
+                        
+function toWeirdCase(string){
+  let word = string.split(' ')
+  let res = ''
+                                
+  for (let i = 0; i < word.length; i++) {
+    for (let j = 0; j < word[i].length; j++) {
+       if (j % 2 === 0) {
+        res += word[i][j].toUpperCase()
+       } else {
+        res += word[i][j].toLowerCase()
+       }
+    }
+                                  
+    res += ' '
+  }
+                                
+ return res.slice(0, -1)
+}
+                        
+                    </pre>
+
+                </div>
+                <div class="project">
+                    <h2>Project</h2>
+                    <hr>
+                    <p class="first">My first project that I completed was a resume. It is available here <a href="https://Panndora1.github.io/rsschool-cv/">Panndora1.github.io/rsschool-cv/</a></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="">GitHab Autor</a>
+            <p>2022</p>
+            <a href="https://rs.school/js/" class="logo"><img src="assets/rs_school_js.svg" alt="logo RSS"></a>
+            
+    </footer>
+</body>
+</html>
